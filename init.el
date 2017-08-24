@@ -28,3 +28,5 @@
 (load "~/.emacs.d/c.el")
 ;;(load "~/.emacs.d/themes/gray30-theme.el")
 (load "~/.emacs.d/org.el")
+(load "~/.emacs.d/python.el")
+
