@@ -25,6 +25,21 @@
  ;; If there is more than one, they won't work right.
  )
 
+;;Attempt to set font for Macs
+;;See: https://www.emacswiki.org/emacs/SetFonts#toc14
+(when (eq system-type 'darwin)
+ ;; default Latin font (e.g. Consolas)
+ (set-face-attribute 'default nil :family "Source Code Pro")
+
+ ;; default font size (point * 10)
+ ;;
+ ;; WARNING!  Depending on the default font,
+ ;; if the size is not supported very well, the frame will be clipped
+ ;; so that the beginning of the buffer may not be visible correctly. 
+ (set-face-attribute 'default nil :height 130)
+ )
+
+
 ;;MODULAR CONFIG
 (load "~/.emacs.d/c.el")
 ;;(load "~/.emacs.d/themes/gray30-theme.el")
