@@ -39,6 +39,12 @@
  (set-face-attribute 'default nil :height 130)
  )
 
+;;Attempt to set font for Linux
+(when (eq system-type 'gnu/linux)
+ (set-face-attribute 'default nil :family "Source Code Pro")
+ (set-face-attribute 'default nil :height 120)
+ )
+
 
 ;;MODULAR CONFIG
 (load "~/.emacs.d/c.el")
