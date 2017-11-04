@@ -16,7 +16,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (misterioso)))
- '(package-selected-packages (quote (arduino-mode nyan-mode rainbow-delimiters))))
+ '(package-selected-packages
+   (quote
+    (scad-mode arduino-mode nyan-mode rainbow-delimiters))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -39,18 +41,13 @@
  (set-face-attribute 'default nil :height 130)
  )
 
-;;Attempt to set font for Linux
-(when (eq system-type 'gnu/linux)
- (set-face-attribute 'default nil :family "Source Code Pro")
- (set-face-attribute 'default nil :height 120)
- )
-
 
 ;;MODULAR CONFIG
 (load "~/.emacs.d/c.el")
 ;;(load "~/.emacs.d/themes/gray30-theme.el")
 (load "~/.emacs.d/org.el")
 (load "~/.emacs.d/python.el")
+(load "~/.emacs.d/scad.el")
 
 ;;Permit capitalizing regions
 (put 'upcase-region 'disabled nil)
