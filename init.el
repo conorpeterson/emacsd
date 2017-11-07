@@ -18,7 +18,7 @@
  '(custom-enabled-themes (quote (misterioso)))
  '(package-selected-packages
    (quote
-    (writeroom-mode arduino-mode nyan-mode rainbow-delimiters))))
+    (scad-mode writeroom-mode arduino-mode nyan-mode rainbow-delimiters))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -47,12 +47,12 @@
  (set-face-attribute 'default nil :height 110)
  )
 
-
 ;;MODULAR CONFIG
 (load "~/.emacs.d/c.el")
 ;;(load "~/.emacs.d/themes/gray30-theme.el")
 (load "~/.emacs.d/org.el")
 (load "~/.emacs.d/python.el")
+(load "~/.emacs.d/scad.el")
 
 ;;Permit capitalizing regions
 (put 'upcase-region 'disabled nil)
