@@ -16,7 +16,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (misterioso)))
- '(package-selected-packages (quote (arduino-mode nyan-mode rainbow-delimiters))))
+ '(package-selected-packages
+   (quote
+    (writeroom-mode arduino-mode nyan-mode rainbow-delimiters))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -42,7 +44,7 @@
 ;;Attempt to set font for Linux
 (when (eq system-type 'gnu/linux)
  (set-face-attribute 'default nil :family "Source Code Pro")
- (set-face-attribute 'default nil :height 120)
+ (set-face-attribute 'default nil :height 110)
  )
 
 
