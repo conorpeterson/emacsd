@@ -53,6 +53,7 @@
 (load "~/.emacs.d/org.el")
 (load "~/.emacs.d/python.el")
 (load "~/.emacs.d/scad.el")
+(load "~/.emacs.d/writeroom.el")
 
 ;;Permit capitalizing regions
 (put 'upcase-region 'disabled nil)
