@@ -18,7 +18,7 @@
  '(custom-enabled-themes (quote (misterioso)))
  '(package-selected-packages
    (quote
-    (scad-mode arduino-mode nyan-mode rainbow-delimiters))))
+    (writeroom-mode scad-mode arduino-mode nyan-mode rainbow-delimiters))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
