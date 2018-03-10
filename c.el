@@ -3,6 +3,7 @@
 
 (provide 'config-cc)
 
+(add-hook 'c-mode-hook 'hl-todo-mode)
 (add-hook 'c-mode-hook 'rainbow-delimiters-mode)
 
 (setq column-number-mode t) ;;Show column count
