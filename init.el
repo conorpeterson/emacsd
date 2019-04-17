@@ -15,10 +15,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (misterioso)))
+ '(ansi-color-names-vector
+   ["#2d3743" "#ff4242" "#74af68" "#dbdb95" "#34cae2" "#008b8b" "#00ede1" "#e1e1e0"])
+ '(custom-enabled-themes (quote (nord)))
+ '(custom-safe-themes
+   (quote
+    ("bf390ecb203806cbe351b966a88fc3036f3ff68cd2547db6ee3676e87327b311" default)))
  '(package-selected-packages
    (quote
-    (hl-todo scad-mode writeroom-mode arduino-mode nyan-mode rainbow-delimiters))))
+    (nord-theme rust-mode hl-todo scad-mode writeroom-mode arduino-mode nyan-mode rainbow-delimiters))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
