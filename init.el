@@ -9,6 +9,9 @@
   (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
 (package-initialize)
 
+;; For brightening the comments in nord
+(setq nord-comment-brightness 10)
+
 ;;CUSTOM SECTION
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -24,6 +27,7 @@
  '(package-selected-packages
    (quote
     (nord-theme rust-mode hl-todo scad-mode writeroom-mode arduino-mode nyan-mode rainbow-delimiters))))
+
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
