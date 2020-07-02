@@ -20,13 +20,14 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#2d3743" "#ff4242" "#74af68" "#dbdb95" "#34cae2" "#008b8b" "#00ede1" "#e1e1e0"])
- '(custom-enabled-themes (quote (nord)))
+ '(custom-enabled-themes (quote (tango)))
  '(custom-safe-themes
    (quote
     ("bf390ecb203806cbe351b966a88fc3036f3ff68cd2547db6ee3676e87327b311" default)))
+ '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (nord-theme rust-mode hl-todo scad-mode writeroom-mode arduino-mode nyan-mode rainbow-delimiters))))
+    (magit nord-theme rust-mode hl-todo scad-mode writeroom-mode arduino-mode nyan-mode rainbow-delimiters))))
 
 
 (custom-set-faces
@@ -53,7 +54,7 @@
 ;;Attempt to set font for Linux
 (when (eq system-type 'gnu/linux)
  (set-face-attribute 'default nil :family "Source Code Pro")
- (set-face-attribute 'default nil :height 110)
+ (set-face-attribute 'default nil :height 90)
  )
 
 ;;MODULAR CONFIG
@@ -63,6 +64,7 @@
 (load "~/.emacs.d/python.el")
 (load "~/.emacs.d/scad.el")
 (load "~/.emacs.d/writeroom.el")
+(load "~/.emacs.d/html.el")
 
 ;;Permit capitalizing regions
 (put 'upcase-region 'disabled nil)
