@@ -27,8 +27,12 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
+<<<<<<< HEAD
     (magit nord-theme rust-mode hl-todo scad-mode writeroom-mode arduino-mode nyan-mode rainbow-delimiters))))
 
+=======
+    (writeroom-mode scad-mode arduino-mode nyan-mode rainbow-delimiters))))
+>>>>>>> 6a2293719984f7f4be6d741b7d28aa70f1e8b998
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
